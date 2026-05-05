@@ -45,7 +45,7 @@ def video():
         link = extract_video_link()
 
         if not link:
-            return {"status": "error", "message": "video link not found"}
+            return {"status": "error", "message": "no link found"}
 
         return {"status": "ok", "url": link}
 
